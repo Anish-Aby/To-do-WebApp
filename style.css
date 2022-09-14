@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    position: relative;
+}
+
+.cirlce-container{
+    position: relative;
+    width: 200vh;
+    height: 100vh;
+}
+
+.circle1 {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: linear-gradient(160deg, #30cfd0 0%, #330867 100%);
+    top: -200px;
+    left: -200px;
+
+}
+
+.circle1:hover{
+    animation: bloom 1s ease-in-out forwards;
+}
+
+@keyframes bloom {
+    0% { transform: scale3d(1, 1, 1);}
+    100% { transform: scale3d(1.5, 1.5, 1.5);}
+}
+
+.circle2 {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border: none;
+    border-radius: 50% 50% 0;
+    background-image: linear-gradient(160deg, #30cfd0 0%, #330867 100%);
+    bottom: 0;
+    right: 0;
+
+}
