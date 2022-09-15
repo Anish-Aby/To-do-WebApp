@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <title>To-Do App</title>
+</head>
+<body>
+    <div class="circle-container">
+
+    </div>
+
+    <div class="button-complete">
+    <button class="learn-more">
+        <span class="circle" aria-hidden="true">
+        <span class="icon arrow"></span>
+        </span>
+        <span class="button-text">Next</span>
+      </button>
+    </div>
+
+
+    <div class="full-container">
+        <div class="nav">
+
+        </div>
+        <div class="main-container">
+            <div class="welcome-block">
+                GO AHEAD.
+                <div class="second-line">
+                    Make your dreams come true.
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/cloud-removebg.png"/>
+            </div>
+
+            <div class="quotes"></div>
+
+            <!-- <div class="quotes-container">
+                <div class="slider">
+                    
+                    <div class="quote">
+                        "When you have a dream, you've got to grab it and never let go." - <b><em>Carol Burnett</em></b>
+                    </div>
+                    <div class="quote">
+                        "Nothing is impossible. The word itself says 'I'm possible!"" — <b><em>Audrey Hepburn</em></b>
+                    </div>
+                    <div class="quote">
+                        "There is nothing impossible to they who will try." — <b><em>Alexander the Great</em></b>
+                    </div>
+                    <div class="quote">
+                        "The bad news is time flies. The good news is you're the pilot." — <b><em>Michael Altshuler</em></b>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="black-panel">
+            <div class="socials-container">
+                    <a class="about" href="#">About</a>
+                    <a class="github" href="https://github.com/Anish-Aby" target="_blank">GitHub</a>
+                    <a class="instagram" href="https://www.instagram.com/imanishaby/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".image"), {
+            max: 40,
+            speed: 1000
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/CSSRulePlugin.min.js" integrity="sha512-WmIFc2KnjfdlxbNwOApiTUtM6TwCz985/6yKTfFqC8Nq7H/VUMfJ897tEGx6SKSxLQbxilffKEcaGhbtBhGmng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
