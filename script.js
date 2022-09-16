@@ -22,8 +22,10 @@ let tl = gsap.timeline({ defaults: { ease: "power4.inOut", duration: 1}})
 tl.to(".welcome-block", {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 2})
 tl.to(".image", {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 2}, "-=2")
 tl.to(".quotes", {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 3}, "-=2")
-tl.to(".circle-container", {'clip-path': 'circle(50% at 50% 50%)', opacity: 1, x: 0, duration: 2}, "-=3")
+tl.to(".circle-container", {'clip-path': 'polygon(0 100%, 100% 100%, 100% 0, 0 0)', opacity: 1, x: 0, duration: 2}, "-=3")
 tl.to(".socials-container", {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 2}, "-=2")
 tl.to(".black-panel", {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 2}, "-=3")
 
 let button = document.querySelector(".learn-more");
+
+button.addEventListener("click", () => gsap.to(".circle-container", {duration: 1,scale: 30}))
